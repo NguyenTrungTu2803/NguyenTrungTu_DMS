@@ -84,6 +84,7 @@ Create table PHONGBAN
 )
 go
 
+
 Create table NHANVIEN
 (
   maNV int primary key not null,
@@ -109,13 +110,15 @@ Create table PHANQUYEN
 	Constraint fk_PQ_NV foreign key(manhanvien) references NHANVIEN(maNV)
 )
 go
-Create table THELOAi
+Create table DANHMUC
 (
-	idtheloai int primary key not null,
-	madanhmuc varchar(50),
+	madanhmuc int primary key not null,
 	tendanhmuc varchar(255),
 	loaidanhmuc int,
-	trangthaidanhmuc tinyint
+	trangthaidanhmuc tinyint,
+	sovanbanden int,
+	id_vanbandi int,
+
 )
 go
 
