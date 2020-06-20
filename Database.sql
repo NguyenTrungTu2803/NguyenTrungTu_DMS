@@ -1,6 +1,39 @@
-Create database dms
+Create database DMS
 go
-use dms
+use DMS
+go
+
+Create table NHANVIEN
+(
+  maNV int primary key not null,
+  hoten varchar(100),
+  matkhau varchar(100),
+  email varchar(100),
+  dienthoai varchar(50),
+)
+go
+
+Create table PHONGBAN
+(
+	maphongban int primary key not null,
+	tenphongban varchar(100)
+)
+go
+
+Create table PHANQUYEN
+(
+	maquyen int primary key not null,
+	manhanvien int,
+	maphongban int,
+	xem bit,
+	sua bit,
+	xoa bit,
+	inan bit,
+	export bit,
+	import bit,
+	Constraint fk_PQ_NV foreign key(manhanvien) references NHANVIEN(maNV)  ,
+	Constraint fk_PQ_PB foreign key (maphongban) references PHONGBAN(maphongban)
+)
 go
 
 Create table VANBANDI
@@ -21,7 +54,9 @@ Create table VANBANDI
 	noinhan varchar(250),
 	xuly Tinyint,
 	quyenxem varchar(100),
-	luu varchar(100)
+	luu varchar(100),
+	maNV int,
+	constraint fk_VBDI_NV foreign key(maNV) references NHANVIEN(maNV)
 )
 GO
 Create table VANBANDEN
@@ -48,9 +83,25 @@ Create table VANBANDEN
 	ngayxuly date,
 	nguoixuly varchar(50),
 	sovanbannam varchar(100),
-	sotrang varchar(10)
+	sotrang varchar(10),
+	maNV int,
+	constraint fk_VBD_NV foreign key(maNV) references NHANVIEN(maNV)
 )
 go
+Create Table DANHMUC
+(
+	maDM int primary key not null,
+	tendanhmuc varchar(255),
+	loaidanhmuc int,
+	trangthaidanhmuc tinyint,
+	idvanbandi int,
+	idvanbanden int,				
+	constraint fk_DM_VBD foreign key(idvanbanden) references VANBANDEN(sovanbanden),
+	constraint fk_DM_VBDI foreign key(idvanbandi) references VANBANDI(id_vanbandi)
+
+)
+go
+
 Create table HOSO
 (
 	id_hoso int primary key not null,
@@ -67,58 +118,16 @@ create table  CHITIETHOSO
 (
 	id int primary key not null,
 	idhoso int,
-	idvanban int,
+	maNV int,
 	ngaybanhanh date,
 	sokyhieuvanban varchar(20),
 	trichyeuvanban varchar(250),
 	loaivanbandenhaydi int,
 	thutuvanban int,
 	Constraint fk_CTHS_HS foreign key(idhoso) references HOSO(id_hoso), 
-)
-go
-
-Create table PHONGBAN
-(
-	maphongban int primary key not null,
-	tenphongban varchar(100)
+	Constraint fk_CTHS_NV foreign key(maNV) references NHANVIEN(maNV)
 )
 go
 
 
-Create table NHANVIEN
-(
-  maNV int primary key not null,
-  hoten varchar(100),
-  matkhau varchar(100),
-  email varchar(100),
-  dienthoai varchar(50),
-  maphongban int,
-  Constraint fk_NV_PB foreign key (maphongban) references PHONGBAN(maphongban)
-)
-go
-
-Create table PHANQUYEN
-(
-	maquyen int primary key not null,
-	manhanvien int,
-	xem bit,
-	sua bit,
-	xoa bit,
-	inan bit,
-	export bit,
-	import bit,
-	Constraint fk_PQ_NV foreign key(manhanvien) references NHANVIEN(maNV)
-)
-go
-Create table DANHMUC
-(
-	madanhmuc int primary key not null,
-	tendanhmuc varchar(255),
-	loaidanhmuc int,
-	trangthaidanhmuc tinyint,
-	sovanbanden int,
-	id_vanbandi int,
-
-)
-go
 
