@@ -1,0 +1,5 @@
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\BLL\bin\Debug\BLL.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\BLL\bin\Debug\BLL.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\BLL\obj\Debug\BLL.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\BLL\obj\Debug\BLL.pdb
