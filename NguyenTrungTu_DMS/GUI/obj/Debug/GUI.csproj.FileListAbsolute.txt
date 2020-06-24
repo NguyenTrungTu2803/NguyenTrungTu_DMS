@@ -10,3 +10,4 @@ F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.pdb
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.dll
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.pdb
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.csproj.CopyComplete
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache

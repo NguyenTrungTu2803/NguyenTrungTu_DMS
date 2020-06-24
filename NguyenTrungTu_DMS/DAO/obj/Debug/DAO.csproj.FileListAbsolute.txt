@@ -2,3 +2,5 @@ F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\bin\Debug\DAO.dll
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\bin\Debug\DAO.pdb
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\obj\Debug\DAO.dll
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\obj\Debug\DAO.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\obj\Debug\DAO.csproj.CoreCompileInputs.cache
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DAO\obj\Debug\DAO.csprojAssemblyReference.cache
