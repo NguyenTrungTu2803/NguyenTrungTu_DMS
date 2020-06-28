@@ -1,0 +1,5 @@
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DTO\bin\Debug\DTO.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DTO\bin\Debug\DTO.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DTO\obj\Debug\DTO.csproj.CoreCompileInputs.cache
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DTO\obj\Debug\DTO.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\DTO\obj\Debug\DTO.pdb

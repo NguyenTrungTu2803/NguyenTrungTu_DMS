@@ -7,7 +7,12 @@ F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.Properties.Resou
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.csproj.GenerateResource.cache
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.exe
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.pdb
-F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.dll
-F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.pdb
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.csproj.CopyComplete
 F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\obj\Debug\GUI.csproj.CoreCompileInputs.cache
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DTO.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DTO.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\BLL.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.dll
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\BLL.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.pdb
+F:\Github\NguyenTrungTu_DMS\NguyenTrungTu_DMS\GUI\bin\Debug\DAO.dll.config

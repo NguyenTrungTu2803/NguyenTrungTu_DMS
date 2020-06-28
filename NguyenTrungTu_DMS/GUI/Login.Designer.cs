@@ -32,12 +32,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.borderTextbox2 = new DAO.BorderTextbox();
-            this.borderTextbox1 = new DAO.BorderTextbox();
+            this.btndangnhap = new DTO.LoginDTO.buttonDTO();
+            this.txtpass = new DTO.LoginDTO.borderTextBox();
+            this.txtuser = new DTO.LoginDTO.borderTextBox();
+            this.txtmk = new DTO.LoginDTO.borderTextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,6 +89,15 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Phần mềm quản ký văn bản";
             // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = global::GUI.Properties.Resources.unnamed;
+            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(178, 120);
+            this.panel2.TabIndex = 1;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -118,43 +129,57 @@
             this.panel3.Size = new System.Drawing.Size(188, 219);
             this.panel3.TabIndex = 8;
             // 
-            // panel2
+            // btndangnhap
             // 
-            this.panel2.BackgroundImage = global::GUI.Properties.Resources.unnamed;
-            this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(178, 120);
-            this.panel2.TabIndex = 1;
+            this.btndangnhap.BackColor = System.Drawing.Color.DimGray;
+            this.btndangnhap.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndangnhap.Location = new System.Drawing.Point(445, 269);
+            this.btndangnhap.Name = "btndangnhap";
+            this.btndangnhap.Size = new System.Drawing.Size(150, 50);
+            this.btndangnhap.TabIndex = 11;
+            this.btndangnhap.Text = "Đăng nhập";
+            this.btndangnhap.UseVisualStyleBackColor = false;
+            this.btndangnhap.Click += new System.EventHandler(this.btndangnhap_Click);
             // 
-            // borderTextbox2
+            // txtpass
             // 
-            this.borderTextbox2.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.borderTextbox2.DefaultBorderColor = System.Drawing.SystemColors.ControlDark;
-            this.borderTextbox2.FocusedBorderColor = System.Drawing.Color.Red;
-            this.borderTextbox2.Location = new System.Drawing.Point(420, 221);
-            this.borderTextbox2.Name = "borderTextbox2";
-            this.borderTextbox2.Size = new System.Drawing.Size(246, 22);
-            this.borderTextbox2.TabIndex = 10;
+            this.txtpass.BackColor = System.Drawing.Color.White;
+            this.txtpass.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtpass.ForeColor = System.Drawing.Color.Black;
+            this.txtpass.Location = new System.Drawing.Point(423, 211);
+            this.txtpass.Name = "txtpass";
+            this.txtpass.PasswordChar = '*';
+            this.txtpass.Size = new System.Drawing.Size(250, 25);
+            this.txtpass.TabIndex = 10;
             // 
-            // borderTextbox1
+            // txtuser
             // 
-            this.borderTextbox1.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.borderTextbox1.DefaultBorderColor = System.Drawing.SystemColors.ControlDark;
-            this.borderTextbox1.FocusedBorderColor = System.Drawing.Color.Red;
-            this.borderTextbox1.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.borderTextbox1.Location = new System.Drawing.Point(420, 161);
-            this.borderTextbox1.Name = "borderTextbox1";
-            this.borderTextbox1.Size = new System.Drawing.Size(246, 25);
-            this.borderTextbox1.TabIndex = 11;
+            this.txtuser.BackColor = System.Drawing.Color.White;
+            this.txtuser.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtuser.ForeColor = System.Drawing.Color.Black;
+            this.txtuser.Location = new System.Drawing.Point(423, 161);
+            this.txtuser.Name = "txtuser";
+            this.txtuser.Size = new System.Drawing.Size(250, 25);
+            this.txtuser.TabIndex = 9;
+            // 
+            // txtmk
+            // 
+            this.txtmk.BackColor = System.Drawing.Color.White;
+            this.txtmk.ForeColor = System.Drawing.Color.Black;
+            this.txtmk.Location = new System.Drawing.Point(423, 211);
+            this.txtmk.Name = "txtmk";
+            this.txtmk.Size = new System.Drawing.Size(250, 22);
+            this.txtmk.TabIndex = 12;
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(736, 450);
-            this.Controls.Add(this.borderTextbox1);
-            this.Controls.Add(this.borderTextbox2);
+            this.Controls.Add(this.txtmk);
+            this.Controls.Add(this.btndangnhap);
+            this.Controls.Add(this.txtpass);
+            this.Controls.Add(this.txtuser);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -180,8 +205,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel3;
-        private DAO.BorderTextbox borderTextbox2;
-        private DAO.BorderTextbox borderTextbox1;
+        private DTO.LoginDTO.borderTextBox txtuser;
+        private DTO.LoginDTO.borderTextBox txtpass;
+        private DTO.LoginDTO.buttonDTO btndangnhap;
+        private DTO.LoginDTO.borderTextBox txtmk;
     }
 }
 

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 15.125, 20.375" name="LinqSQLData">
+  <DataContextMoniker Name="/LinqSQLDataDataContext" />
+  <nestedChildShapes>
+    <classShape Id="07e84599-96cb-45d9-86fb-c846f20a06ca" absoluteBounds="5.875, 7.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/CHITIETHOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="25d90227-7062-4a65-b546-231030fc1104" absoluteBounds="5.8900000000000006, 7.8350000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6bc64723-a05b-4044-918f-29e8f9ba41bf" absoluteBounds="8.75, 10.375, 2, 4.2708154296874987">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/VANBANDI" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8a455f23-43a0-49ba-bc41-2316d3544cbb" absoluteBounds="8.765, 10.835, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="472fc784-7801-40ee-aa2d-10297245e20f" absoluteBounds="12.875, 14.875, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/DANHMUC" />
+      <nestedChildShapes>
+        <elementListCompartment Id="644fdeaa-7b1f-47fe-a9bf-b8745ad74b5d" absoluteBounds="12.89, 15.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c8bbb736-982d-492e-a3f9-e5bdc20df4e4" absoluteBounds="2.125, 6.375, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/HOSO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fcb2ba19-2118-4f7e-ac74-d725564b99cb" absoluteBounds="2.1399999999999997, 6.835, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="4bafa3cf-a932-4b26-99b9-759ceac21009" absoluteBounds="4.375, 10.5, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/NHANVIEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c805dcec-95ab-41ff-9f14-2c4d93099ced" absoluteBounds="4.39, 10.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe8026e4-3fa4-4449-b859-f398dde9182a" absoluteBounds="1.375, 10.5, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/PHANQUYEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="83eb012e-c5bb-4996-9273-c23cd1c8eba8" absoluteBounds="1.3900000000000006, 10.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="110b90dd-5c28-46c6-a4d5-fd40316be0b8" absoluteBounds="1.75, 14.625, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/PHONGBAN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ed6a2ad1-d7d7-4aa5-b5f8-15e2f773efc3" absoluteBounds="1.7650000000000006, 15.085, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="b917c671-2f2b-4d4d-a7f9-e099bf0babcf" absoluteBounds="6.375, 14.75, 2, 5.4246240234375023">
+      <DataClassMoniker Name="/LinqSQLDataDataContext/VANBANDEN" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8e257d5b-2d75-4bd2-9161-73d1e751da8b" absoluteBounds="6.3900000000000006, 15.21, 1.9700000000000002, 4.8646240234375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 13.686708984375); (14.21875 : 13.686708984375); (14.21875 : 14.875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/VANBANDI/VANBANDI_DANHMUC" />
+      <nodes>
+        <classShapeMoniker Id="6bc64723-a05b-4044-918f-29e8f9ba41bf" />
+        <classShapeMoniker Id="472fc784-7801-40ee-aa2d-10297245e20f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.125 : 8.04890055338542); (5.875 : 8.04890055338542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/HOSO/HOSO_CHITIETHOSO" />
+      <nodes>
+        <classShapeMoniker Id="c8bbb736-982d-492e-a3f9-e5bdc20df4e4" />
+        <classShapeMoniker Id="07e84599-96cb-45d9-86fb-c846f20a06ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.125 : 10.5); (6.125 : 9.72280110677083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/NHANVIEN/NHANVIEN_CHITIETHOSO" />
+      <nodes>
+        <classShapeMoniker Id="4bafa3cf-a932-4b26-99b9-759ceac21009" />
+        <classShapeMoniker Id="07e84599-96cb-45d9-86fb-c846f20a06ca" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(6.375 : 11.3854484049479); (8.75 : 11.3854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/NHANVIEN/NHANVIEN_VANBANDI" />
+      <nodes>
+        <classShapeMoniker Id="4bafa3cf-a932-4b26-99b9-759ceac21009" />
+        <classShapeMoniker Id="6bc64723-a05b-4044-918f-29e8f9ba41bf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.375 : 11.3854484049479); (3.375 : 11.3854484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/NHANVIEN/NHANVIEN_PHANQUYEN" />
+      <nodes>
+        <classShapeMoniker Id="4bafa3cf-a932-4b26-99b9-759ceac21009" />
+        <classShapeMoniker Id="fe8026e4-3fa4-4449-b859-f398dde9182a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5625 : 14.625); (2.5625 : 13.0401025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/PHONGBAN/PHONGBAN_PHANQUYEN" />
+      <nodes>
+        <classShapeMoniker Id="110b90dd-5c28-46c6-a4d5-fd40316be0b8" />
+        <classShapeMoniker Id="fe8026e4-3fa4-4449-b859-f398dde9182a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.375 : 15.8565991210938); (12.875 : 15.8565991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/VANBANDEN/VANBANDEN_DANHMUC" />
+      <nodes>
+        <classShapeMoniker Id="b917c671-2f2b-4d4d-a7f9-e099bf0babcf" />
+        <classShapeMoniker Id="472fc784-7801-40ee-aa2d-10297245e20f" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.34375 : 12.2708968098958); (5.34375 : 17.4623120117188); (6.375 : 17.4623120117188)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LinqSQLDataDataContext/NHANVIEN/NHANVIEN_VANBANDEN" />
+      <nodes>
+        <classShapeMoniker Id="4bafa3cf-a932-4b26-99b9-759ceac21009" />
+        <classShapeMoniker Id="b917c671-2f2b-4d4d-a7f9-e099bf0babcf" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

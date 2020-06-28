@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BLL.LoginBLL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,10 +13,13 @@ namespace GUI
 {
     public partial class Login : Form
     {
-        bool focus = false;
+        DangNhapBLL _dangNhapBLL;
+        main main;
         public Login()
         {
             InitializeComponent();
+            _dangNhapBLL = new DangNhapBLL();
+            main = new main();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -28,9 +32,20 @@ namespace GUI
             Application.Exit();
         }
 
-        private void borderTextbox1_Load(object sender, EventArgs e)
+        private void btndangnhap_Click(object sender, EventArgs e)
         {
-
+            if(_dangNhapBLL.checkBLL(txtuser.Text.ToString(), txtmk.Text.ToString()) == 0)
+            {
+                MessageBox.Show("Thông tin không để trống", "Thông báo");
+            }
+            else if(_dangNhapBLL.checkBLL(txtuser.Text.ToString(), txtmk.Text.ToString()) == 2){
+                MessageBox.Show("Thông tin tài khoản không đúng", "Thông báo");
+            }
+            else
+            {
+                main.Show();
+                this.Hide();
+            }
         }
     }
 }
